@@ -1,3 +1,3 @@
-# standard
+# lxnights
 
-[![Build Status](https://travis-ci.org/aacedo/PlaceandcityStandard.svg?branch=master)](https://travis-ci.org/aacedo/PlaceandcityStandard)
+[![Build Status](https://travis-ci.org/aacedo/PlaceandcityLxnights.svg?branch=master)](https://travis-ci.org/aacedo/PlaceandcityLxnights)
