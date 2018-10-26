@@ -256,8 +256,7 @@
                     2/4
                 </div>
                 <div class="float-right">
-                    <button type="button" class="btn btn-primary btn-next" data-dismiss="modal" aria-label="Close"
-                            href="#" langkey="index9" id="freguesia_button" disabled>Próximo
+                    <button type="button" class="btn btn-primary btn-next" data-dismiss="modal" aria-label="Close" href="#" langkey="index9" id="freguesia_button" disabled>Próximo
                     </button>
                 </div>
                 <div class="float-right" style="padding-top: 8px; margin-right: 20px">
@@ -312,7 +311,10 @@
                   3/4
                 </div>
                 <div class="float-right">
-                  <button type="button" class="btn btn-primary btn-next"  aria-label="Close" id="how_long" langkey="index9">Próximo</button>
+                  <button type="button" class="btn btn-primary btn-next"  data-dismiss="modal" aria-label="Close" id="how_long" langkey="index9">Próximo</button>
+                    </button>
+
+
                 </div>
                 <div class="float-right" style="padding-top: 8px; margin-right: 20px">
                   <a type="button" class="link-primary btn-prev" id="how_long_pre" langkey="index11">Anterior</a>
@@ -387,8 +389,108 @@
                 <b langkey="index20">Selecione por favor os problemas mais importantes da sua freguesia (máximo 3)</b>
             </div>
             <div class="modal-body" id="problems" style="margin-left: 20px">
+                <p style="font-weight: bold;" id="title_sliders_change" langkey="map1-20">
+                    Please, indicate the level of only applicable characteristic that explains why do you draw this area Y. (where 0 is nothing and 5 is totally).
+                </p>
+                <ul class="" style="list-style:none; margin-bottom: 0px">
+                    <li class="radio" style="margin-top: 0px;">
+                        <label>
+                            <input type="radio" name="freguesia" value="1"> Ajuda
+                        </label>
+                    </li>
+                    <li class="radio">
+                        <label>
+                            <input type="radio" name="freguesia" value="2"> Alcântara
+                        </label>
+                    </li>
+                    <li class="radio">
+                        <label>
+                            <input type="radio" name="freguesia" value="3"> Alvalade
+                        </label>
+                    </li>
+                    <li class="radio">
+                        <label>
+                            <input type="radio" name="freguesia" value="4"> Areeiro
+                        </label>
+                    </li>
+                    <li class="radio">
+                        <label>
+                            <input type="radio" name="freguesia" value="5"> Arroios
+                        </label>
+                    </li>
+                    <li class="radio">
+                        <label>
+                            <input type="radio" name="freguesia" value="6"> Avenidas Novas
+                        </label>
+                    </li>
+                </ul>
+
+                <p style="margin-bottom: 30px; margin-top: 50px; font-weight: bold;" id="title_sliders_change" langkey="map1-20">
+                    Please, indicate the level of only applicable characteristic that explains why do you draw this area Y. (where 0 is nothing and 5 is totally).
+                </p>
+                <div class="no-float" style="margin-top: 30px">
+                    <div>
+                        <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-left: 0px">
+                          <span langkey="map1-21">Sociabilidade (vizinhança, amigável, interativo, acolhedor, etc)</span>
+                        </p>
+                        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" style="padding-left: 5px; padding-right: 5px; margin-bottom: 20px">
+                          <label class="radio-inline radio-novisible personal_radio" style="font-size: 12px;">
+                            <span langkey="global12" style="margin-left: -20px; margin-right: 20px"></span>
+                            <input type="radio" name="na1" value="1"> 1
+                          </label>
+                          <!-- Visible only mobile    -->
+                          <label class="radio-inline radio-mobile radio-visible personal_radio" style="font-size: 12px; display: none">
+                            <input type="radio" name="na1" value="1"> 1
+                            <span langkey="global12" style="margin-right: 20px"></span>
+                          </label>
+                          <label class="radio-inline radio-mobile" style=" margin-left: 10px; font-size: 12px">
+                              <input type="radio" name="na1" value="2"> 2
+                          </label>
+                          <label class="radio-inline radio-mobile" style=" margin-left: 10px; font-size: 12px">
+                              <input type="radio" name="na1" value="3"> 3
+                          </label>
+                          <label class="radio-inline radio-mobile" style=" margin-left: 10px; font-size: 12px">
+                              <input type="radio" name="na1" value="4"> 4
+                          </label>
+                          <label class="radio-inline radio-mobile" style=" margin-left: 10px; font-size: 12px">
+                              <input type="radio" name="na1" value="5"> 5
+                              <span langkey="global13"></span>
+                          </label>
+                        </div>
+                    </div>
+                    <div class="no-float"></div>
+                    <div>
+                        <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-left: 0px">
+                          <span langkey="map1-21">Sociabilidade (vizinhança, amigável, interativo, acolhedor, etc)</span>
+                        </p>
+                        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" style="padding-left: 5px; padding-right: 5px; margin-bottom: 20px">
+                          <label class="radio-inline radio-novisible personal_radio" style="font-size: 12px;">
+                            <span langkey="global12" style="margin-left: -20px; margin-right: 20px"></span>
+                            <input type="radio" name="na1" value="1"> 1
+                          </label>
+                          <!-- Visible only mobile    -->
+                          <label class="radio-inline radio-mobile radio-visible personal_radio" style="font-size: 12px; display: none">
+                            <input type="radio" name="na1" value="1"> 1
+                            <span langkey="global12" style="margin-right: 20px"></span>
+                          </label>
+                          <label class="radio-inline radio-mobile" style=" margin-left: 10px; font-size: 12px">
+                              <input type="radio" name="na1" value="2"> 2
+                          </label>
+                          <label class="radio-inline radio-mobile" style=" margin-left: 10px; font-size: 12px">
+                              <input type="radio" name="na1" value="3"> 3
+                          </label>
+                          <label class="radio-inline radio-mobile" style=" margin-left: 10px; font-size: 12px">
+                              <input type="radio" name="na1" value="4"> 4
+                          </label>
+                          <label class="radio-inline radio-mobile" style=" margin-left: 10px; font-size: 12px">
+                              <input type="radio" name="na1" value="5"> 5
+                              <span langkey="global13"></span>
+                          </label>
+                        </div>
+                    </div>
+
                 <!--  ------------- Column 1 ------------ -->
-                <ul class="media-list col-lg-6 col-md-6 col-sm-6 col-xs-12" style="list-style:none;  padding: 0px;">
+                <!-- <ul class="media-list col-lg-6 col-md-6 col-sm-6 col-xs-12" style="list-style:none;  padding: 0px;">
                     <li class="media">
                         <label style="font-weight: normal; cursor: pointer;">
                             <input type="checkbox" name="problem" value="1">
@@ -467,9 +569,9 @@
                             <span langkey="index34"></span>
                         </label>
                     </li>
-                </ul>
+                </ul> -->
                 <!--  ------------- Column 2 ------------ -->
-                <ul class="media-list col-lg-6 col-md-6 col-sm-6 col-xs-12" style="list-style:none; padding: 0px;">
+                <!-- <ul class="media-list col-lg-6 col-md-6 col-sm-6 col-xs-12" style="list-style:none; padding: 0px;">
                     <li class="media">
                         <label style="font-weight: normal; cursor: pointer;">
                             <input type="checkbox" name="problem" value="14">
@@ -548,7 +650,7 @@
                             <span langkey="index47">Manutenção urbana</span>
                         </label>
                     </li>
-                </ul>
+                </ul> -->
             </div> <!--/.modal-body -->
             <div class="no-float"></div>
             <div class="modal-footer" style="border:none;">
