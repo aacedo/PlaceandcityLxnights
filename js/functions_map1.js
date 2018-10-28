@@ -362,6 +362,26 @@ function startAll() {
                 $("#pd2").html(pd2re);
                 var pd3re = $("#pd3").html().replace('Y', "<b>" + highlightedArea.name + "</b>");
                 $("#pd3").html(pd3re);
+
+
+                var bosc1re = $("#bosc-1").html().replace('Y', "<b>" + highlightedArea.name + "</b>");
+                $("#bosc-1").html(bosc1re);
+                var bosc2re = $("#bosc-2").html().replace('Y', "<b>" + highlightedArea.name + "</b>");
+                $("#bosc-2").html(bosc2re);
+                var bosc3re = $("#bosc-3").html().replace('Y', "<b>" + highlightedArea.name + "</b>");
+                $("#bosc-3").html(bosc3re);
+
+
+                var brsc1re = $("#brsc-1").html().replace('Y', "<b>" + highlightedArea.name + "</b>");
+                $("#brsc-1").html(brsc1re);
+                var brsc2re = $("#brsc-2").html().replace('Y', "<b>" + highlightedArea.name + "</b>");
+                $("#brsc-2").html(brsc2re);
+                var brsc3re = $("#brsc-3").html().replace('Y', "<b>" + highlightedArea.name + "</b>");
+                $("#brsc-3").html(brsc3re);
+
+
+
+
             }
             else {
                 alert(translator.getKeyLanguageValue("general6"));
@@ -621,6 +641,8 @@ function startAll() {
         L.drawLocal.draw.handlers.polygon.tooltip.cont = translator.getKeyLanguageValue("general121");
         L.drawLocal.draw.handlers.polygon.tooltip.end = translator.getKeyLanguageValue("general122");
     });
+
+
 }
 
 
