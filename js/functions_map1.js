@@ -143,8 +143,8 @@ function startAll() {
 
 
         var reasonvalue;
-        var naturevalidation = $('[name=na1]:checked,[name=na2]:checked,[name=na3]:checked,[name=na4]:checked');
-        if (naturevalidation.length < 4) {
+        var naturevalidation = $('[name=na1]:checked,[name=na2]:checked,[name=na3]:checked,[name=na4]:checked,[name=na5]:checked,[name=na6]:checked');
+        if (naturevalidation.length < 6) {
             alert(translator.getKeyLanguageValue("general5"));
             return;
         }
@@ -186,7 +186,10 @@ function startAll() {
                     na1: parseInt($("input[name=na1]:checked").val()),
                     na2: parseInt($("input[name=na2]:checked").val()),
                     na3: parseInt($("input[name=na3]:checked").val()),
-                    na4: parseInt($("input[name=na4]:checked").val())
+                    na4: parseInt($("input[name=na4]:checked").val()),
+                    na5: parseInt($("input[name=na5]:checked").val()),
+                    na6: parseInt($("input[name=na6]:checked").val())
+
                 }
             };
 
@@ -234,7 +237,9 @@ function startAll() {
                     na1: parseInt($("input[name=na1]:checked").val()),
                     na2: parseInt($("input[name=na2]:checked").val()),
                     na3: parseInt($("input[name=na3]:checked").val()),
-                    na4: parseInt($("input[name=na4]:checked").val())
+                    na4: parseInt($("input[name=na4]:checked").val()),
+                    na5: parseInt($("input[name=na5]:checked").val()),
+                    na6: parseInt($("input[name=na6]:checked").val())
                 }
             };
 
@@ -270,6 +275,8 @@ function startAll() {
             $("input[name=na2]").prop('checked', false);
             $("input[name=na3]").prop('checked', false);
             $("input[name=na4]").prop('checked', false);
+            $("input[name=na5]").prop('checked', false);
+            $("input[name=na6]").prop('checked', false);
 
 
         }
@@ -313,10 +320,7 @@ function startAll() {
             map.addLayer(SOP[i].layer);
             var sopi = SOP[i];
             $('#radios').append('<div class="radio"><label><input type="radio" name="sc_areas" value="' + i + '"/>Area ' + SOP[i].name + '</label></div>');
-            $('#sortab').append('<div class="well span2 tile" name="order_areas" value="' + i + '"> Area ' + SOP[i].name + '</div>');
-
-
-
+            $('#sortab').append('<div class="well span2 tile" name="order_areas" id="' + i + '"> Area ' + SOP[i].name + '</div>');
 
         }
 
@@ -415,11 +419,17 @@ function startAll() {
 
     $('#order-final-place').click(function () {
 
+
+
+
+        var idsInOrder = $("#sortab").sortable("toArray");
+
+
         // validate
 
 
-        var sopvalidation = $('[name=PI1]:checked,[name=PI2]:checked,[name=PI3]:checked,[name=PA1]:checked,[name=PA2]:checked,[name=PA3]:checked,[name=PD1]:checked,[name=PD2]:checked,[name=PD3]:checked');
-        if (sopvalidation.length < 9) {
+        var sopvalidation = $('[name=PI1]:checked,[name=PI2]:checked,[name=PI3]:checked,[name=PA1]:checked,[name=PA2]:checked,[name=PA3]:checked,[name=PD1]:checked,[name=PD2]:checked,[name=PD3]:checked,[name=bosc1]:checked,[name=bosc2]:checked,[name=bosc3]:checked,[name=brsc1]:checked,[name=brsc2]:checked,[name=brsc3]:checked');
+        if (sopvalidation.length < 15) {
             alert(translator.getKeyLanguageValue("general5"));
             return;
         }
@@ -435,7 +445,14 @@ function startAll() {
             pa3: parseInt($("input[name=PA3]:checked").val()),
             pd1: parseInt($("input[name=PD1]:checked").val()),
             pd2: parseInt($("input[name=PD2]:checked").val()),
-            pd3: parseInt($("input[name=PD3]:checked").val())
+            pd3: parseInt($("input[name=PD3]:checked").val()),
+            bosc1: parseInt($("input[name=bosc1]:checked").val()),
+            bosc2: parseInt($("input[name=bosc2]:checked").val()),
+            bosc3: parseInt($("input[name=bosc3]:checked").val()),
+            brsc1: parseInt($("input[name=brsc1]:checked").val()),
+            brsc2: parseInt($("input[name=brsc2]:checked").val()),
+            brsc3: parseInt($("input[name=brsc3]:checked").val())
+
         }
 
         for (var i = 0; i < SOP.length; i++) {
@@ -444,8 +461,10 @@ function startAll() {
 
         var data2 = {
             type: "sop",
-            areas: SOP
-        };
+            areas: SOP,
+            idsInOrder: idsInOrder
+
+    };
 
         app.setSOP(id, data2, function (response) {
             if (response === false) {

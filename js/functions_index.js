@@ -199,7 +199,7 @@ function startall() {
     $('#done1').click(function () {
 
 
-        var characteristicvalidation = $('[name=na1]:checked,[name=na2]:checked,[name=na3]:checked,[name=na4]:checked,[name=na5]:checked,[name=na6]:checked,[name=na7]:checked ');
+        var characteristicvalidation = $('[name=re1]:checked,[name=re2]:checked,[name=re3]:checked,[name=re4]:checked,[name=re5]:checked,[name=re6]:checked,[name=re7]:checked ');
         if (characteristicvalidation.length < 7) {
             alert(translator.getKeyLanguageValue("general5"));
             return;
@@ -212,13 +212,13 @@ function startall() {
             var zip = $("#zip").val();
 
 
-            var re1= parseInt($("input[name=na1]:checked").val());
-            var re2= parseInt($("input[name=na2]:checked").val());
-            var re3= parseInt($("input[name=na3]:checked").val());
-            var re4= parseInt($("input[name=na4]:checked").val());
-            var re5= parseInt($("input[name=na5]:checked").val());
-            var re6= parseInt($("input[name=na6]:checked").val());
-            var re7= parseInt($("input[name=na7]:checked").val());
+            var re1= parseInt($("input[name=re1]:checked").val());
+            var re2= parseInt($("input[name=re2]:checked").val());
+            var re3= parseInt($("input[name=re3]:checked").val());
+            var re4= parseInt($("input[name=re4]:checked").val());
+            var re5= parseInt($("input[name=re5]:checked").val());
+            var re6= parseInt($("input[name=re6]:checked").val());
+            var re7= parseInt($("input[name=re7]:checked").val());
 
 
 
