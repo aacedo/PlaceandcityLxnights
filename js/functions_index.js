@@ -197,35 +197,67 @@ function startall() {
     // preapare data to send
 
     $('#done1').click(function () {
-        var home = ($("input[name=lisbon_home]:checked").val()) === 'true';
-        var freguesia = parseInt($("input[name=freguesia]:checked").val());
-        var howlong = parseInt($("input[name=howlong]:checked").val());
-        var zip = $("#zip").val();
-        var problem = [];
-        $("input[name=problem]:checked").each(function () {
-            problem.push(parseInt($(this).val()));
-        });
-        var experiment = getParameterByName('exp');
-        var data = {
-            home: home,
-            freguesia: freguesia,
-            howlong: howlong,
-            zip: zip,
-            problem: problem,
-            experiment: experiment
-        };
-        app.setHome(data, function (response) {
-            if (response === false) {
-                // alert("There is a connection problem; please, try again later");
-                alert(translator.getKeyLanguageValue("general1"));
-            }
-            else {
-                util.redirectToPage({
-                    url: "map1.html",
-                    payload: {id:response.id}
-                });
-            }
-        });
+
+
+        var characteristicvalidation = $('[name=na1]:checked,[name=na2]:checked,[name=na3]:checked,[name=na4]:checked,[name=na5]:checked,[name=na6]:checked,[name=na7]:checked ');
+        if (characteristicvalidation.length < 7) {
+            alert(translator.getKeyLanguageValue("general5"));
+            return;
+        }
+
+        else{
+            var home = ($("input[name=lisbon_home]:checked").val()) === 'true';
+            var freguesia = parseInt($("input[name=freguesia]:checked").val());
+            var howlong = parseInt($("input[name=howlong]:checked").val());
+            var zip = $("#zip").val();
+
+
+            var re1= parseInt($("input[name=na1]:checked").val());
+            var re2= parseInt($("input[name=na2]:checked").val());
+            var re3= parseInt($("input[name=na3]:checked").val());
+            var re4= parseInt($("input[name=na4]:checked").val());
+            var re5= parseInt($("input[name=na5]:checked").val());
+            var re6= parseInt($("input[name=na6]:checked").val());
+            var re7= parseInt($("input[name=na7]:checked").val());
+
+
+
+            /*var problem = [];
+            $("input[name=problem]:checked").each(function () {
+                problem.push(parseInt($(this).val()));
+            });*/
+            var experiment = getParameterByName('exp');
+            var data = {
+                home: home,
+                freguesia: freguesia,
+                howlong: howlong,
+                zip: zip,
+                re1: re1,
+                re2: re2,
+                re3: re3,
+                re4: re4,
+                re5: re5,
+                re6: re6,
+                re7: re7,
+                experiment: experiment
+            };
+            app.setHome(data, function (response) {
+                if (response === false) {
+                    // alert("There is a connection problem; please, try again later");
+                    alert(translator.getKeyLanguageValue("general1"));
+                }
+                else {
+                    util.redirectToPage({
+                        url: "map1.html",
+                        payload: {id:response.id}
+                    });
+                }
+            });
+        }
+
+
+
+
     });
 
     // End prepare data to send
