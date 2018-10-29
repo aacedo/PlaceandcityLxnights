@@ -409,9 +409,6 @@ function startAll() {
         $("#questions_done").toggleClass("hidden show");
         $("#order_place").toggleClass("hidden show");
 
-
-
-
     });
 
 
@@ -457,7 +454,7 @@ function startAll() {
             }
             else {
                 util.redirectToPage({
-                    url: "map2.html",
+                    url: "finish.html",
                     payload: {id: response.id, center: mapCenter}
                 });
             }
