@@ -277,6 +277,15 @@ function startAll() {
 
     });
 
+    $(function () {
+        $("#sortab").sortable({
+            tolerance: 'pointer',
+            revert: 'invalid',
+            placeholder: 'span2 well placeholder tile',
+            forceHelperSize: true
+        });
+    });
+
     $('#reason').change(function () {
         if ($("#reason").val() === "5") {
 
@@ -304,6 +313,11 @@ function startAll() {
             map.addLayer(SOP[i].layer);
             var sopi = SOP[i];
             $('#radios').append('<div class="radio"><label><input type="radio" name="sc_areas" value="' + i + '"/>Area ' + SOP[i].name + '</label></div>');
+            $('#sortab').append('<div class="well span2 tile" name="order_areas" value="' + i + '"> Area ' + SOP[i].name + '</div>');
+
+
+
+
         }
 
         $("input[name='sc_areas']").change(function () {
@@ -391,6 +405,18 @@ function startAll() {
     }
 
     $('#questions-sop').click(function () {
+
+        $("#questions_done").toggleClass("hidden show");
+        $("#order_place").toggleClass("hidden show");
+
+
+
+
+    });
+
+
+
+    $('#order-final-place').click(function () {
 
         // validate
 

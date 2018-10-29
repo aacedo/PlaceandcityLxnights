@@ -366,7 +366,15 @@
 
   "lx15":"Interacting with people of this area (Y) makes me interested in what people unlike me are thinking.",
   "lx16":"Interacting with people of this area (Y) gives me new people to talk to.",
-  "lx17":"Interacting with people of this area (Y) makes me feel connected to the bigger picture."
+  "lx17":"Interacting with people of this area (Y) makes me feel connected to the bigger picture.",
+
+
+  "lx18":"Please order all the defined areas according to the usual order of visiting them. On the top, the earliest visited and on the bottom, the latest visited",
+
+  "lx19": "If you do not vist them usually at the same day, please click the checkbox."
+
+
+
 
 
 
