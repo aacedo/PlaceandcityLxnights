@@ -75,6 +75,11 @@
 	margin-right: 20px;
 	margin-left: 20px;
 }
+
+/* Radios */
+.radio-inline input[type="radio"]{
+	position: relative;
+}
 /* Modal change position */
 /*.modal_draw{
 	position: absolute;
