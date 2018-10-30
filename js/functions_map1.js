@@ -410,6 +410,19 @@ function startAll() {
 
     $('#questions-sop').click(function () {
 
+
+
+        // validate
+
+
+        var sopvalidation = $('[name=PI1]:checked,[name=PI2]:checked,[name=PI3]:checked,[name=PA1]:checked,[name=PA2]:checked,[name=PA3]:checked,[name=PD1]:checked,[name=PD2]:checked,[name=PD3]:checked,[name=bosc1]:checked,[name=bosc2]:checked,[name=bosc3]:checked,[name=brsc1]:checked,[name=brsc2]:checked,[name=brsc3]:checked');
+        if (sopvalidation.length < 15) {
+            alert(translator.getKeyLanguageValue("general5"));
+            return;
+        }
+
+        // finish validate
+
         $("#questions_done").toggleClass("hidden show");
         $("#order_place").toggleClass("hidden show");
 
@@ -427,16 +440,7 @@ function startAll() {
             var idsInOrder = $("#sortab").sortable("toArray");
         }
 
-        // validate
 
-
-        var sopvalidation = $('[name=PI1]:checked,[name=PI2]:checked,[name=PI3]:checked,[name=PA1]:checked,[name=PA2]:checked,[name=PA3]:checked,[name=PD1]:checked,[name=PD2]:checked,[name=PD3]:checked,[name=bosc1]:checked,[name=bosc2]:checked,[name=bosc3]:checked,[name=brsc1]:checked,[name=brsc2]:checked,[name=brsc3]:checked');
-        if (sopvalidation.length < 15) {
-            alert(translator.getKeyLanguageValue("general5"));
-            return;
-        }
-
-        // finish validate
 
         highlightedArea.dimensions = {
             pi1: parseInt($("input[name=PI1]:checked").val()),
