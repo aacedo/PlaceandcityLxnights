@@ -182,7 +182,7 @@ function startAll() {
                 layer: L.geoJson(drawnItems.toGeoJSON()),
                 livingIn: ($("input[name=live]:checked").val()) === 'true',
                 reason: reasonvalue,
-                predictors: {
+                characteristics: {
                     na1: parseInt($("input[name=na1]:checked").val()),
                     na2: parseInt($("input[name=na2]:checked").val()),
                     na3: parseInt($("input[name=na3]:checked").val()),
@@ -233,7 +233,7 @@ function startAll() {
                 layer: L.geoJson(drawnItems.toGeoJSON()),
                 livingIn: ($("input[name=live]:checked").val()) === 'true',
                 reason: reasonvalue,
-                predictors: {
+                characteristics: {
                     na1: parseInt($("input[name=na1]:checked").val()),
                     na2: parseInt($("input[name=na2]:checked").val()),
                     na3: parseInt($("input[name=na3]:checked").val()),
