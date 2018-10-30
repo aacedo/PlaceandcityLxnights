@@ -369,12 +369,31 @@
   "lx17":"Interacting with people of this area (Y) makes me feel connected to the bigger picture.",
 
 
-  "lx18":"Please order all the defined areas according to the usual order of visiting them. On the top, the earliest visited and on the bottom, the latest visited",
+  "lx18":"Please order all the defined areas according to the usual order of visiting them in one night. On the top, the earliest visited and on the bottom, the latest visited",
 
-  "lx19": "If you do not vist them usually at the same day, please click the checkbox.",
+  "lx19": "If you do not visit them usually at the same day, please click the checkbox.",
 
 
-  "lx20": "I usually go out at nigh on"
+  "lx20": "I usually go out at nigh on",
+
+  "lx21": "What is your current student status?",
+  "lx22": "Mobility program student (less than one year studying in Lisbon)",
+
+  "lx23": "Foreign student (more than one year studying in Lisbon)",
+  "lx24": "Local student (studying the entire program in Lisbon)",
+
+  "lx25": "Do you live by your own?",
+  "lx26": "Yes, I have my own house/appartment",
+
+  "lx27": "No, I live with other students or friends",
+  "lx28": "No, I live with my significant other",
+  "lx29": "No, I live with my parents or relatives",
+  "lx30": "No, I live in a Students Residence",
+  "lx31": "Other"
+
+
+
+
 
 
 

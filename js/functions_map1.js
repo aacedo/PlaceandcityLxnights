@@ -420,10 +420,12 @@ function startAll() {
     $('#order-final-place').click(function () {
 
 
-
-
-        var idsInOrder = $("#sortab").sortable("toArray");
-
+        if ($("input:checkbox[name='no_order']").is(':checked')) {
+            var idsInOrder = parseInt($("input[name=no_order]:checked").val());
+        }
+        else{
+            var idsInOrder = $("#sortab").sortable("toArray");
+        }
 
         // validate
 

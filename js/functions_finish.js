@@ -5,12 +5,12 @@ var profession_new;
 
 function startAll(){
 
-    $('#profession').change(function () {
-        if ($("#profession").val() == "6") {
-            $("#other_profession").removeClass().addClass("show");
+    $('#own').change(function () {
+        if ($('input[name=own]:checked', '#own').val() == "6") {
+            $("#other_own").removeClass().addClass("show");
         }
         else{
-            $("#other_profession").removeClass().addClass("hidden");
+            $("#other_own").removeClass().addClass("hidden");
         }
 
     });
@@ -33,7 +33,15 @@ function startOthers() {
     try {
         $('#finishBtn').click(function () {
 
-            if (($("#study").val() == "0")) {
+
+            var statusvalidation = $('[name=status]:checked,[name=own]:checked');
+            if (statusvalidation.length < 2) {
+                alert(translator.getKeyLanguageValue("general5"));
+                return;
+            }
+
+
+            /*if (($("#study").val() == "0")) {
                 alert(translator.getKeyLanguageValue("general10"));
                 return;
             }
@@ -45,18 +53,18 @@ function startOthers() {
             if (($("#income").val() == "0")) {
                 alert(translator.getKeyLanguageValue("general12"));
                 return;
-            }
+            }*/
 
 
-            if ($("#profession").val() == "6") {
-                if (!$("#other_prof").val()) {
+            if ($('input[name=own]:checked', '#own').val() == "6") {
+                if (!$('input[name=own]:checked', '#own').val()) {
                     //alert("Please, introduce a profession.")
                     alert(translator.getKeyLanguageValue("general11"));
 
 
                 }
                 else {
-                    profession_new = parseInt($("#other_prof").val())
+                    own_new = parseInt($("#other_own_value").val())
 
 
                     // var id = util.getFromLocalStorage(util.interPageDataKey);
@@ -65,9 +73,8 @@ function startOthers() {
                         gender: parseInt($("input[name=gender]:checked").val()),
                         age: parseInt($("#age").val()),
                         country: $("#country").val(),
-                        study: parseInt($("#study").val()),
-                        profession: profession_new,
-                        income: parseInt($("#income").val())
+                        status: parseInt($('input[name=status]:checked', '#status').val()),
+                        house: own_new
                     };
 
                     app.finish(id, data, function (response) {
@@ -84,9 +91,9 @@ function startOthers() {
                     })
                 }
             }
-            if ($("#profession").val() != "6") {
+            if ($('input[name=own]:checked', '#own').val() != "6") {
 
-                profession_new = parseInt($("#profession").val())
+                own_new = parseInt($('input[name=own]:checked', '#own').val())
 
 
                 // var id = util.getFromLocalStorage(util.interPageDataKey);
@@ -95,9 +102,8 @@ function startOthers() {
                     gender: parseInt($("input[name=gender]:checked").val()),
                     age: parseInt($("#age").val()),
                     country: $("#country").val(),
-                    study: parseInt($("#study").val()),
-                    profession: profession_new,
-                    income: parseInt($("#income").val())
+                    status: parseInt($('input[name=status]:checked', '#status').val()),
+                    house: own_new
                 };
 
                 app.finish(id, data, function (response) {
