@@ -320,7 +320,7 @@ function startAll() {
             map.addLayer(SOP[i].layer);
             var sopi = SOP[i];
             $('#radios').append('<div class="radio"><label><input type="radio" name="sc_areas" value="' + i + '"/>Area ' + SOP[i].name + '</label></div>');
-            $('#sortab').append('<div class="well span2 tile" name="order_areas" id="' + i + '"> Area ' + SOP[i].name + '</div>');
+            $('#sortab').append('<div class="well span2 tile" name="order_areas" id="' + i + '"> <span class="glyphicon glyphicon-move" aria-hidden="true" style="margin-right:10px"></span> Area ' + SOP[i].name + '</div>');
 
         }
 
