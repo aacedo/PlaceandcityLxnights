@@ -216,21 +216,13 @@ function startall() {
                 days.push(parseInt($(this).val()));
             });
 
-
-            var re1= parseInt($("input[name=re1]:checked").val());
-            var re2= parseInt($("input[name=re2]:checked").val());
-            var re3= parseInt($("input[name=re3]:checked").val());
-            var re4= parseInt($("input[name=re4]:checked").val());
-            var re5= parseInt($("input[name=re5]:checked").val());
-            var re6= parseInt($("input[name=re6]:checked").val());
-            var re7= parseInt($("input[name=re7]:checked").val());
-
-
-
             /*var problem = [];
             $("input[name=problem]:checked").each(function () {
                 problem.push(parseInt($(this).val()));
             });*/
+
+            var d = new Date();
+
             var experiment = getParameterByName('exp');
             var data = {
                 home: home,
@@ -238,13 +230,16 @@ function startall() {
                 howlong: howlong,
                 zip: zip,
                 days: days,
-                re1: re1,
-                re2: re2,
-                re3: re3,
-                re4: re4,
-                re5: re5,
-                re6: re6,
-                re7: re7,
+                reasons: {
+                    re1: parseInt($("input[name=re1]:checked").val()),
+                    re2: parseInt($("input[name=re2]:checked").val()),
+                    re3: parseInt($("input[name=re3]:checked").val()),
+                    re4: parseInt($("input[name=re4]:checked").val()),
+                    re5: parseInt($("input[name=re5]:checked").val()),
+                    re6: parseInt($("input[name=re6]:checked").val()),
+                    re7: parseInt($("input[name=re7]:checked").val())
+                },
+                date:d,
                 experiment: experiment
             };
             app.setHome(data, function (response) {
