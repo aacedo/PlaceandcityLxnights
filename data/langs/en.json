@@ -142,14 +142,7 @@
   "map1-99":"You can add as many areas as you want. When you finish to add them, click on button ",
   "map1-100":"Add another word that define another area",
 
-  "map1-101":"Small Portuguese Bars like tascas",
-  "map1-102":"Bars with live Music",
-  "map1-103":"I just stay on the streets drinking and socializing with my friends",
-  "map1-104":"'Miradouro' or Square",
-  "map1-lx1":"Discos or Clubs",
-  "map1-lx2":"Artistic and Cultural Associations",
-  "map1-lx3":"I just need a place to dance!",
-  "map1-105":"Other",
+
 
 
 
@@ -373,7 +366,7 @@
   "lx19": "If you do not visit them usually at the same day, please click the checkbox.",
 
 
-  "lx20": "I usually go out at nigh on (please, mark all the days of the week you enjoy Lisbon nightlife)",
+  "lx20": "I usually go out at nigh on (please, mark all the days of the week you usually enjoy Lisbon nightlife)",
 
   "lx21": "What is your current student status?",
   "lx22": "Mobility program student (less than one year studying in Lisbon)",
@@ -406,7 +399,41 @@
   "lx41":"We want to know where are the areas or places that, for some reason/s, are significant for you in the Lisbon’s nightlife.",
   "lx42": "There are many reasons why we go out at night. Can you please evaluate them in a scale of 1 to 5 (1 being the less important and 5 more important)",
 
-  "lx43": "Observations"
+  "lx43": "Observations",
+
+  "lx44": "We want to know about your habits when you enjoy Lisbon at night.",
+
+
+  "lx45":"It is clean",
+  "lx46":"It is a lively Public Space",
+  "lx47":"It is safe",
+  "lx48":"It is easy to arrive through public transport",
+  "lx49":"It is noisy",
+  "lx50":"It is full of tourists",
+
+  "lx51":"Please, select the most important reason because you go to this area hola",
+
+  "lx52":"Small Portuguese Bars like tascas",
+  "lx53":"Bars with live Music",
+  "lx54":"I just stay on the streets drinking and socializing with my friends",
+  "lx55":"'Miradouro' or Square",
+  "lx56":"Discos or Clubs",
+  "lx57":"Artistic and Cultural Associations",
+  "lx58":"I just need a place to dance!",
+  "lx59":"Other",
+
+  "lx60":"Last, we would like you to evaluate the urban conditions of the area hola.",
+
+  "lx61":"These are your important Lisbon nightlife areas!!"
+
+
+
+
+
+
+
+
+
 
 
 
