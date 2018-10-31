@@ -188,7 +188,9 @@ function startAll() {
                     na3: parseInt($("input[name=na3]:checked").val()),
                     na4: parseInt($("input[name=na4]:checked").val()),
                     na5: parseInt($("input[name=na5]:checked").val()),
-                    na6: parseInt($("input[name=na6]:checked").val())
+                    na6: parseInt($("input[name=na6]:checked").val()),
+                observationssop: parseInt($('#observationssop').val())
+
 
                 }
             };
@@ -239,7 +241,8 @@ function startAll() {
                     na3: parseInt($("input[name=na3]:checked").val()),
                     na4: parseInt($("input[name=na4]:checked").val()),
                     na5: parseInt($("input[name=na5]:checked").val()),
-                    na6: parseInt($("input[name=na6]:checked").val())
+                    na6: parseInt($("input[name=na6]:checked").val()),
+                observationssop: parseInt($('#observationssop').val())
                 }
             };
 
@@ -277,6 +280,8 @@ function startAll() {
             $("input[name=na4]").prop('checked', false);
             $("input[name=na5]").prop('checked', false);
             $("input[name=na6]").prop('checked', false);
+            $("#observationssop").val("");
+
 
 
         }

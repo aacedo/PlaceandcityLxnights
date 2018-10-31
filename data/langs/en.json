@@ -339,7 +339,6 @@
   "index15a": "Thursdays",
   "index16a": "There is no rule! Everyday counts!",
 
-  "index18a": "There are many reasons why we go out at night. Can you please evaluate them in a scale of 1 to 5 (1 being the less important and 5 more important)",
 
 
   "lx1": "To gather with my friends",
@@ -404,7 +403,11 @@
   "lx39": "Sa",
   "lx40": "Su",
 
-  "lx41":"We want to know where are the areas or places that, for some reason/s, are significant for you in the Lisbon’s nightlife."
+  "lx41":"We want to know where are the areas or places that, for some reason/s, are significant for you in the Lisbon’s nightlife.",
+  "lx42": "There are many reasons why we go out at night. Can you please evaluate them in a scale of 1 to 5 (1 being the less important and 5 more important)",
+
+  "lx43": "Observations"
+
 
 
 
