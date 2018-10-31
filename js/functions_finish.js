@@ -57,14 +57,13 @@ function startOthers() {
 
 
             if ($('input[name=own]:checked', '#own').val() == "6") {
-                if (!$('input[name=own]:checked', '#own').val()) {
+                if ($("#other_own_value").val()=="") {
                     //alert("Please, introduce a profession.")
                     alert(translator.getKeyLanguageValue("general11"));
-
-
                 }
                 else {
-                    own_new = parseInt($("#other_own_value").val())
+                    var own_new = parseInt($("#other_own_value").val());
+
 
 
                     // var id = util.getFromLocalStorage(util.interPageDataKey);
@@ -93,7 +92,7 @@ function startOthers() {
             }
             if ($('input[name=own]:checked', '#own').val() != "6") {
 
-                own_new = parseInt($('input[name=own]:checked', '#own').val())
+                var own_new = parseInt($('input[name=own]:checked', '#own').val())
 
 
                 // var id = util.getFromLocalStorage(util.interPageDataKey);
