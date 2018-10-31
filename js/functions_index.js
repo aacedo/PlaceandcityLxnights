@@ -142,9 +142,16 @@ function startall() {
 
                 var data = {
                     home: home,
-                    portugal: portugal,
+                    freguesia: freguesia,
                     howlong: howlong,
                     zip: zip,
+                    re1: re1,
+                    re2: re2,
+                    re3: re3,
+                    re4: re4,
+                    re5: re5,
+                    re6: re6,
+                    re7: re7,
                     experiment: experiment
                 };
                 app.setHome(data, function (response) {
