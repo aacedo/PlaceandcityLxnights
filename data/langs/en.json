@@ -374,7 +374,7 @@
   "lx19": "If you do not visit them usually at the same day, please click the checkbox.",
 
 
-  "lx20": "I usually go out at nigh on",
+  "lx20": "I usually go out at nigh on (please, mark all the days of the week you enjoy Lisbon nightlife)",
 
   "lx21": "What is your current student status?",
   "lx22": "Mobility program student (less than one year studying in Lisbon)",
@@ -394,7 +394,18 @@
 
   "lx32":"Thanks for this information, is very important for us in order to create a better profile on college students and their nightlife practices. In case you are interested to know more about the study, the chosen areas by other people and participate in the gift cards, please provide us with your email and/or twitter username. Together, we are going to improve Lisbon nightlife! ",
 
-  "lx33": "Hi! We are looking to know more about college students in Lisbon Universities. We are a research group gathering experiences about nightlife: we want to know how you sense the places and your perceptions about the Lisbon nightlife. In the following minutes (we promise that it won´t take long!), we will ask you some questions about the places you go and enjoy at night. Answering to all questions and giving an email will give you the opportunity to win a 50€ voucher available on most Lisbon Shopping Centers. Your experiences are very important to us!! Let's Start!!"
+  "lx33": "Hi! We are looking to know more about college students in Lisbon Universities. We are a research group gathering experiences about nightlife: we want to know how you sense the places and your perceptions about the Lisbon nightlife. In the following minutes (we promise that it won´t take long!), we will ask you some questions about the places you go and enjoy at night. Answering to all questions and giving an email will give you the opportunity to win a 50€ voucher available on most Lisbon Shopping Centers. Your experiences are very important to us!! Let's Start!!",
+
+  "lx34": "Mo",
+  "lx35": "Tu",
+  "lx36": "We",
+  "lx37": "Th",
+  "lx38": "Fr",
+  "lx39": "Sa",
+  "lx40": "Su",
+
+  "lx41":"We want to know where are the areas or places that, for some reason/s, are significant for you in the Lisbon’s nightlife."
+
 
 
 

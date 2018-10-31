@@ -142,16 +142,9 @@ function startall() {
 
                 var data = {
                     home: home,
-                    freguesia: freguesia,
+                    portugal: portugal,
                     howlong: howlong,
                     zip: zip,
-                    re1: re1,
-                    re2: re2,
-                    re3: re3,
-                    re4: re4,
-                    re5: re5,
-                    re6: re6,
-                    re7: re7,
                     experiment: experiment
                 };
                 app.setHome(data, function (response) {
@@ -218,6 +211,10 @@ function startall() {
             var freguesia = parseInt($("input[name=freguesia]:checked").val());
             var howlong = parseInt($("input[name=howlong]:checked").val());
             var zip = $("#zip").val();
+            var days = [];
+            $("input[name=days]:checked").each(function () {
+                days.push(parseInt($(this).val()));
+            });
 
 
             var re1= parseInt($("input[name=re1]:checked").val());
@@ -240,6 +237,7 @@ function startall() {
                 freguesia: freguesia,
                 howlong: howlong,
                 zip: zip,
+                days: days,
                 re1: re1,
                 re2: re2,
                 re3: re3,
