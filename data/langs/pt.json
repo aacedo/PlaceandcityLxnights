@@ -61,7 +61,7 @@
   "map1-3":"Freguesias",
   "map1-4":"Gostaríamos de saber onde estão os locais que, por alguma razão, têm um significado para si.",
   "map1-5":"Pense por favor sobre os locais onde:",
-  "map1-6":"se sente mais identificado (p.e. Este local representa-me)",
+  "map1-6":"se sente mais identificado (p.e. este local representa-me)",
   "map1-7":"se sente mais ligado (p.e. adoro este local)",
   "map1-8":"se sente mais dependente (p.e. este é o local mais adequado para fazer as coisas que mais gosto)",
   "map1-9":"Escreva por favor uma ou mais palavras que descrevam cada uma das áreas. Pense numa determinada área e escreva no espaço abaixo uma ou mais palavras que definam essa área. A seguir clique em “Adicionar área”. Pode adicionar todas as áreas que quiser. Sem stress :)",
@@ -324,7 +324,108 @@
   "general122": "Clique no primeiro ponto para fechar esta área.",
 
 
-  "general150": "Gostaria de participar nos próximos processos participatórios na sua cidade?"
+  "general150": "Gostaria de participar nos próximos processos participatórios na sua cidade?",
+
+
+
+
+  "lx1": "Sair com os meus amigos",
+  "lx2": "Namorar",
+  "lx3": "Apanhar uma bebedeira!",
+  "lx4": "Expressar as minhas necessidades artísticas e culturais",
+  "lx5": "Conhecer mais a cidade",
+  "lx6": "Conhecer novas pessoas",
+  "lx7": "Participar em atividades comunitárias e artísticas",
+
+
+
+
+
+  "lx10": "Bonding Social Capital",
+
+  "lx11": "Bridging Social Capital",
+
+
+  "lx12":"As pessoas com quem interajo nesta área (Y) colocariam a sua reputaçao em risco por mim.",
+  "lx13":"Eu conheço pessoas nessa área (Y) bem o suficiente para fazê-las fazer qualquer coisa importante.",
+  "lx14":"As pessoas com quem interajo nessa área (Y) partilhariam comigo a sua última moeda que eles/as tivessem. ",
+
+
+  "lx15":"Interagir com as pessas desta área (Y) traz-me alguma curiosidade sobre as pessoas que partilham comigo esta área mas que pensam diferente.",
+  "lx16":"Interagir com as pessoas desta área (Y) leva-me a conhecer novas pessoas",
+  "lx17":"Interagir com as pessoas desta área (Y) faz-me ter uma visão maior.",
+
+
+
+  "lx18":"Por favor, ordene as áreas que costuma visitar durante uma saída à noite, colocando no topo a primeira área que visita e no final a que visita por último.",
+
+  "lx19": " Por favor, clique na caixa, se não visita estas áreas no mesmo dia.",
+
+
+  "lx20": "Normalmente, costumo sair às (por favor, indique todos os dias da semana em que costuma sair à noite)",
+
+  "lx21": "Qual é o seu perfil de estudante atual?",
+  "lx22": "Estudante de um programa de mobilidade (menos de um ano a estudar em Lisboa; Exemplo: Erasmus)",
+
+  "lx23": "Estudante estrangeiro (mais de um ano a estudar em Lisboa)",
+  "lx24": "Estudante local (a estudar em Lisboa durante todo o curso)",
+
+  "lx25": "Você vive por conta própia?",
+  "lx26": "Sim, eu tenho minha própria casa",
+
+  "lx27": "Não, eu partilho casa com estudantes ou amigos",
+  "lx28": "Não, eu moro com a minha/meu companheira/o",
+  "lx29": "Não, eu moro com os meus pais / família",
+  "lx30": "Não, eu moro numa residência de estudantes",
+  "lx31": "Outras situaçoes",
+
+
+  "lx32":"Obrigado por esta informação, a qual é muito importante para melhorar a criação de um perfil pormenorizado dos estudantes de ensino superior, assim como as suas práticas de diversão noturna. Caso esteja interessado em saber mais sobre o estudo, as áreas escolhidas por outras pessoas ou de obter um 'voucher' de oferta, por favor, não hesite em nos fornecer o seu endereço de e-mail ou o seu nome de utilizador do Twitter. Juntos, vamos melhorar a vida noturna de Lisboa!",
+
+  "lx33": "Olá! Gostariamos de saber mais sobre os estudantes das instituições de ensino superior da cidade de Lisboa. Nesta nova iniciativa do LXNIGHTS, visamos realizar uma análise sobre como os estudantes de ensino superior que frequentam a noite lisboeta sentem 'os espaços da noite' e quais são as suas percepções nomeadamente em relação à vida noturna da cidade. Ao longo dos próximos minutos (não demorará muito!), iremos perguntar acerca dos locais da noite lisboeta que merecem serem visitados / 'experenciados'. As suas experiências são muito importantes para nós! Vamos começar!",
+
+  "lx331":"Aquelas pessoas que respondam ao questionário de maneira completa e forneçam um endereço de e-mail, terão a oportunidade de ganhar um voucher de 50 € a ser utilizado na maioria dos Centros Comerciais de Lisboa.",
+
+
+  "lx34": "2.ª",
+  "lx35": "3.ª",
+  "lx36": "4.ª",
+  "lx37": "5.ª",
+  "lx38": "6.ª",
+  "lx39": "Sá",
+  "lx40": "Do",
+
+  "lx41":"Gostaríamos de saber e localizar aquelas áreas ou lugares que, por alguma razão, são significativos na sua diversão noturna em Lisboa.",
+  "lx42":"Existem muitas razões pelas quais saímos à noite. Pode, por favor, avaliá-las numa escala de 1 a 5 (1 sendo o menos importante e 5 mais importante)?",
+
+  "lx43": "Obsevações",
+
+  "lx44": "Gostaríamos de saber mais acerca dos seus hábitos de consumo durante a diversão noturna",
+
+
+  "lx45":"A limpeza do espaço",
+  "lx46":"É um espaço público animado",
+  "lx47":"É seguro",
+  "lx48":"Accesível com transporte público",
+  "lx49":"Ruído",
+  "lx50":"Está cheio de turistas",
+
+  "lx51":"Por favor, selecione a razão mais importante pela qual você escolhe esta área hola para a suas atividades de diversão noturna:",
+
+  "lx52":"Tascas, bares tradicionais.",
+  "lx53":"Bares com música ao vivo",
+  "lx54":"Beber na rua e socializar com as/os amigas/os",
+  "lx55":"Miradouro ou Largo",
+  "lx56":"Discotecas ou Clubes",
+  "lx57":"Associações artísticas e/ou culturais",
+  "lx58":"Eu só quero um lugar para dançar!",
+  "lx59":"Outro",
+
+  "lx60":"Por último, gostaríamos que avaliasse as condições urbanas da área hola.",
+
+  "lx61":"Estas são as suas áreas mais importantes de visita noturna em Lisboa!"
+
+
 
 
 
