@@ -45,6 +45,9 @@ body{
 .logo_phd{
 height: 40px;
 }
+.logo_phd_small{
+height: 30px;
+}
 .name_link:hover{
 	text-decoration: none;
 	color: #6DBFCE; 
