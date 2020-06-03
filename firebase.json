@@ -6,10 +6,23 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [ {
-      "source": "/getAll", "function": "getAll"
-    },{
-      "source": "/getAllPrepared", "function": "getAllPrepared"
-    } ]
+    "rewrites": [
+      {
+        "source": "/getAll",
+        "function": "getAll"
+      },
+      {
+        "source": "/getAllPrepared",
+        "function": "getAllPrepared"
+      }
+    ]
+  },
+  "emulators": {
+    "hosting": {
+      "port": 5000
+    },
+    "ui": {
+      "enabled": true
+    }
   }
 }
